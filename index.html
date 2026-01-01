@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>RASTARE | Premium</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Inter', sans-serif;
+            background-color: #000;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .background {
+            position: fixed;
+            inset: 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.85)), 
+                        url('img/bg.jpg') no-repeat center center;
+            background-size: cover;
+            z-index: -1;
+        }
+
+        .card {
+            background: rgba(20, 20, 20, 0.7);
+            backdrop-filter: blur(25px);
+            -webkit-backdrop-filter: blur(25px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 40px;
+            padding: 50px 30px;
+            width: 90%;
+            max-width: 370px;
+            text-align: center;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.7);
+        }
+
+        .avatar {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 25px;
+            border-radius: 50%;
+            border: 2px solid rgba(255, 255, 255, 0.15);
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+        }
+
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 26px;
+            font-weight: 900;
+            letter-spacing: 3px;
+            margin-bottom: 35px;
+            text-transform: uppercase;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            padding: 18px 25px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.07);
+            border-radius: 22px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 16px;
+            letter-spacing: 0.5px;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        /* Настройка иконок */
+        .icon {
+            width: 28px;
+            height: 28px;
+            margin-right: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .btn svg {
+            width: 100%;
+            height: 100%;
+            fill: #fff;
+            transition: all 0.4s ease;
+        }
+
+        /* Эффекты для кнопок и иконок */
+        .btn:hover {
+            transform: translateY(-3px) scale(1.02);
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        /* Цвет Telegram при наведении */
+        .btn-tg:hover { color: #26A5E4; border-color: #26A5E4; }
+        .btn-tg:hover svg { fill: #26A5E4; filter: drop-shadow(0 0 8px #26A5E4); }
+
+        /* Цвет Avito при наведении */
+        .btn-avito:hover { color: #94cf1d; border-color: #94cf1d; }
+        .btn-avito:hover svg { fill: #94cf1d; filter: drop-shadow(0 0 8px #94cf1d); }
+
+        .btn:active { transform: scale(0.96); }
+
+        .footer {
+            margin-top: 40px;
+            color: rgba(255, 255, 255, 0.2);
+            font-size: 11px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background"></div>
+
+    <div class="card">
+        <div class="avatar">
+            <img src="img/avatar.jpg" alt="Rastare">
+        </div>
+        
+        <h1>RASTARE</h1>
+
+        <div class="links">
+            <a href="https://t.me/rastare1" target="_blank" class="btn btn-tg">
+                <span class="icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161c-.18 1.897-.962 6.502-1.359 8.627-.168.9-.499 1.201-.82 1.23-.698.064-1.226-.461-1.901-.903-1.056-.693-1.652-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.329-.912.489-1.301.481-.428-.008-1.252-.241-1.865-.44-.751-.244-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635.099-.002.321.023.465.14s.186.284.196.403c.011.082.011.161.008.244z"/>
+                    </svg>
+                </span>
+                TELEGRAM
+            </a>
+
+            <a href="https://www.avito.ru/brands/64f141999da66da04aa8574dd59542aa?src=sharing" target="_blank" class="btn btn-avito">
+                <span class="icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M7.4 12.1c1.3 0 2.4-1.1 2.4-2.4S8.7 7.3 7.4 7.3s-2.4 1.1-2.4 2.4 1.1 2.4 2.4 2.4zm10.7 1c.9 0 1.6-.7 1.6-1.6s-.7-1.6-1.6-1.6-1.6.7-1.6 1.6.7 1.6 1.6 1.6zm-5.4 6.6c2.2 0 4-1.8 4-4s-1.8-4-4-4-4 1.8-4 4 1.8 4 4 4zm4.1-13.8c1.3 0 2.4-1.1 2.4-2.4S18 1.1 16.8 1.1s-2.4 1.1-2.4 2.4 1.1 2.4 2.4 2.4z"/>
+                    </svg>
+                </span>
+                AVITO SHOP
+            </a>
+        </div>
+
+        <div class="footer">Premium Connection</div>
+    </div>
+
+</body>
+</html>
