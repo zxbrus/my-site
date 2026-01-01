@@ -28,8 +28,9 @@
         .background {
             position: fixed;
             inset: 0;
+            /* ИСПРАВЛЕНО: путь к фону без папки img */
             background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.85)), 
-                        url('img/bg.jpg') no-repeat center center;
+                        url('bg.jpg') no-repeat center center;
             background-size: cover;
             z-index: -1;
         }
@@ -93,7 +94,6 @@
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
 
-        /* Настройка иконок */
         .icon {
             width: 28px;
             height: 28px;
@@ -111,18 +111,15 @@
             transition: all 0.4s ease;
         }
 
-        /* Эффекты для кнопок и иконок */
         .btn:hover {
             transform: translateY(-3px) scale(1.02);
             background: rgba(255, 255, 255, 0.08);
             border-color: rgba(255, 255, 255, 0.3);
         }
 
-        /* Цвет Telegram при наведении */
         .btn-tg:hover { color: #26A5E4; border-color: #26A5E4; }
         .btn-tg:hover svg { fill: #26A5E4; filter: drop-shadow(0 0 8px #26A5E4); }
 
-        /* Цвет Avito при наведении */
         .btn-avito:hover { color: #94cf1d; border-color: #94cf1d; }
         .btn-avito:hover svg { fill: #94cf1d; filter: drop-shadow(0 0 8px #94cf1d); }
 
@@ -143,7 +140,7 @@
 
     <div class="card">
         <div class="avatar">
-            <img src="img/avatar.jpg" alt="Rastare">
+            <img src="avatar.jpg" alt="Rastare">
         </div>
         
         <h1>RASTARE</h1>
